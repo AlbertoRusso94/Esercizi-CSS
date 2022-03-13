@@ -1,0 +1,42 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "verde verde verde"
+    "giallo rosso blu"
+    "giallo rosso blu"
+    "aran aran blu";
+}
+
+#green {
+  height: 50%;
+  grid-area: verde;
+}
+
+#yellow {
+  grid-area: giallo;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#orange {
+  height: 50%;
+  grid-area: aran;
+}
+
+#red {
+  grid-area: rosso;
+}
+
+#blue {
+  grid-area: blu;
+}
